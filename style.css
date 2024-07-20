@@ -116,6 +116,7 @@ p{
 }
 .col-4 img{
     width: 100%;
+    border-radius: 15px;
 }
 .title{
     text-align: center;
@@ -143,6 +144,9 @@ h4{
     font-weight: bold;
 }
 .rating .fa{
+    color: #ff523b;
+}
+.fa-star{
     color: #ff523b;
 }
 
@@ -201,7 +205,7 @@ small{
     display: none;
 }
 /*----------media query---------*/
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:800px){
     nav ul{
         position: absolute;
         top: 70px;
@@ -225,15 +229,20 @@ small{
         display: block;
         cursor: pointer;
     }
+    .heading {
+        text-align: center;
+    }
+
 }
 /*media queries for less than 600 screen size*/
 
 @media only screen and (max-width:600px){
+
     .row{
         text-align: center;
     }
     .col-2, .col-3, .col-4{
-        flex-basis: 100%;
+        flex-basis: 80%;
     }
-
+    
 }
