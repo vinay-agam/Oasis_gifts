@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -199,11 +202,12 @@ small{
 .footer-col-1 img{
     width: 50px;
 }
-.fa-bars{
+.fa-bars, .menubar{
     width: 8px;
     padding-left: 20px;
-    display: none;
+    display: none !important;
 }
+
 /*----------media query---------*/
 @media only screen and (max-width:800px){
     nav ul{
@@ -225,8 +229,8 @@ small{
         color: white;
 
     }
-    .fa-bars{
-        display: block;
+    .fa-bars, .menubar{
+        display: block !important;
         cursor: pointer;
     }
     .heading {
